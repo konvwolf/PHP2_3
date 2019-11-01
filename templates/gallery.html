@@ -1,0 +1,11 @@
+{% for image in gallery %}
+<div class="galleryPic" data-id="{{ image.id }}">
+    <img src="./public/img/{{ image.file_name }}" alt="{{ image.description }}" onmouseover="this.style='transform: scale(1.1);'" onmouseout="this.style='transform: scale(1)'">
+    <p class="picName">
+        {{ image.description }}
+    </p>
+    <p class='picViews'>
+        <i class="far fa-eye"></i> <span class="counter">{{ image.counter }}</span>
+    </p>
+</div>
+{% endfor %}

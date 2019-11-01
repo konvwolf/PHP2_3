@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pictures</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Подключаю стили -->
+    {% for style in styles %}
+        <link rel="stylesheet" href="./public/css/{{ style }}">
+    {% endfor %}
+</head>
+<body>
+    <!-- Подключаю шаблон галереи -->
+    <div class="gallery">
+        {% include "gallery.html" %}
+    </div>
+    <div class="modalWindow"></div>
+
+    <!-- Форма отправки отзыва -->
+    <form method="post" action="./engine/comms.php" class="comments_form">
+        <input type="text" name="name" placeholder="Ваше имя" class="name">
+        <textarea name="comm" class="comment" placeholder="Напишите комментарий"></textarea>
+        <button type="submit" class="comments_button">Отправить</button>
+    </form>
+    
+    <!-- Подключаю шаблон отзывов -->
+    {% include "comments.html" %}
+        
+    <!-- Подключаю JS-скрипты -->
+    {% for script in js %}
+        <script src="./public/js/{{ script }}"></script>
+    {% endfor %}
+</body>
+</html>

@@ -18,3 +18,4 @@ const STYLES_PATH = PUBLIC_DIR.'css'.DIRECTORY_SEPARATOR; // папка css
 const JS_PATH = PUBLIC_DIR.'JS'.DIRECTORY_SEPARATOR; // папка js
 const TEMPLATES_PATH = SITE_ROOT.'templates'.DIRECTORY_SEPARATOR; // папка с HTML-шаблонами
 const ENGINE_PATH = SITE_ROOT.'engine'.DIRECTORY_SEPARATOR; // папка с движком
+const CACHE_PATH = SITE_ROOT.'cache'.DIRECTORY_SEPARATOR; // папка для кэша

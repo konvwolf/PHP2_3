@@ -52,7 +52,7 @@
 .comments_button:hover {
     color:black;
     background-color: white;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .user_comm {

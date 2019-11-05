@@ -1,3 +1,5 @@
+-- MySQL 5.6
+
 CREATE DATABASE IF NOT EXISTS gallery DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 USE gallery;
